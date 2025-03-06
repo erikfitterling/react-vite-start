@@ -1,0 +1,24 @@
+{
+  "name": "valhalla",
+  "version": "1.0.0",
+  "description": "A React application to track user experiences.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "client": "npm start --prefix src",
+    "dev": "concurrently \"npm run start\" \"npm run client\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run build --prefix src"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.10.9",
+    "concurrently": "^5.3.0",
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "author": "Your Name",
+  "license": "ISC"
+}
